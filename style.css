@@ -1,0 +1,122 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url(Background.jpg);
+  backdrop-filter: blur(2px);
+}
+
+.players {
+  margin-top: 10px;
+  width: 50vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+.score {
+  width: 50vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+p {
+  margin: 0;
+}
+
+.game-container {
+  gap: 1%;
+  width: 40vw;
+  height: 40vw;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 0px 9px 3px rgba(34, 60, 80, 0.2);
+  border-radius: 5px;
+  font-size: 10vw;
+  background-color: #fff;
+  width: 32.64%;
+  height: 32.64%;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  transition: 0.5s;
+}
+
+.player1 {
+  background-color: lightgray;
+  padding: 7px;
+  border-radius: 10px;
+  color: white;
+   box-shadow: 5px 4px 3px 2px rgba(34, 60, 80, 0.1);
+}
+.player2 {
+  background-color: lightgray;
+  padding: 7px;
+  border-radius: 10px;
+  color: white;
+   box-shadow: 5px 4px 3px 2px rgba(34, 60, 80, 0.1);
+}
+
+.start {
+  font-weight: 700;
+  background: rgb(255, 36, 36);
+  background: linear-gradient(344deg, #ff2424 49%, #0eb4fb 51%);
+  border: 0;
+  width: 130px;
+  border-radius: 10px;
+  padding: 0;
+  color: white;
+  text-transform: uppercase;
+  font-size: 25px;
+  box-shadow: 5px 4px 3px 2px rgba(34, 60, 80, 0.1);
+}
+.start:hover {
+  transform: scale(1.1);
+  transition: 0.5s;
+}
+
+.popup-fade {
+  display: none;
+}
+.popup-fade:before {
+  content: "";
+  background: #000;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.7;
+  z-index: 9999;
+}
+.popup {
+  position: fixed;
+  top: 20%;
+  left: 50%;
+  padding: 20px;
+  width: 113px;
+  margin-left: -75px;
+  background: #fff;
+  border-radius: 4px;
+  z-index: 99999;
+  opacity: 1;
+}
+.popup-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
